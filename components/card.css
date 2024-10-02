@@ -1,0 +1,77 @@
+main .card-container {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: white;
+}
+
+main .card {
+    background: #fff;
+    color: #ffffff;
+    margin: 10px;
+    border-radius: 15px;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+}
+
+main .card-image {
+    height: 190px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    background-color: transparent;
+}
+
+main .car-1 {
+    background-image: url("../assets/images/historique.png");
+    max-width: 100%;
+    vertical-align: top;
+}
+
+main .car-2 {
+    background-image: url("../assets/images/directeur.png");
+}
+
+main .car-3 {
+    background-image: url("../assets/images/vision.png");
+}
+
+main .car-4 {
+    background-image: url("../assets/images/objectives.jpg");
+}
+
+main.card h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    width: 100%;
+    padding: 20px 5px;
+    margin: auto;
+}
+
+main .card p {
+    padding: 10px;
+    width: 100%;
+}
+
+main .card a {
+    background-color: #b85c34;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+
+main .card:hover {
+    background-color: rgba(67, 104, 109, 0.548);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}

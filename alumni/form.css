@@ -1,0 +1,140 @@
+.form-box label {
+    padding: 12px 12px 12px 0;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-box button {
+    width: 100%;
+    background-color: #1b1b1b;
+    color: white;
+    margin: 5px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-box button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.form-box button:hover {
+    color: #b85c34;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #b85c34, 0 0 10px #b85c34;
+}
+
+.form-box button a:hover {
+    color: #b85c34;
+}
+
+.form-box {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 500px;
+    height: 100%;
+    margin-left: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-box form {
+    padding: 15px 30px;
+    margin: 20px;
+}
+
+.form-box fieldset {
+    border-radius: 15px;
+    box-shadow: 38px 38px 56px #b85c34, -25px -25px 38px #b85c34;
+}
+
+.form-box h2 {
+    text-align: center;
+    padding: 4px 6px;
+    margin: 4px;
+}
+
+.form-box p {
+    text-align: center;
+    padding: 4px;
+    margin: 15px;
+}
+
+.form-box .row {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media all and (max-width: 768px) {
+    .form-box .row .col-1,
+    .form-box .row .col-2,
+    .form-box button {
+        width: 100%;
+        margin-top: 0;
+    }
+    .form-box {
+        width: 80%;
+        margin: 10px 30% 10px 11%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-box h2 {
+        font-size: 16px;
+    }
+    .form-box p {
+        font-size: 14px;
+    }
+    .form-box label {
+        font-size: 12px;
+    }
+    .form-box button {
+        padding: 5px;
+    }
+    input[type="text"] {
+        padding: 8px;
+    }
+    .form-box {
+        width: 80%;
+        margin: 10px 30% 10px 11%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .form-box button {
+        padding: 4px;
+        font-size: 12px;
+    }
+    input[type="text"] {
+        padding: 8px;
+    }
+    .form-box label {
+        font-size: 12px;
+    }
+    .form-box h2 {
+        font-size: 15px;
+    }
+    .form-box p {
+        font-size: 12px;
+    }
+    .form-box {
+        width: 80%;
+        margin: 10px 30% 10px 11%;
+    }
+}

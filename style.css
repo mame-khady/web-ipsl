@@ -1,0 +1,40 @@
+main {
+    margin-top: 150px;
+}
+
+.content {
+    position: relative;
+}
+
+main .main-content header {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+main .main-content p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content p {
+    color: black;
+    font-family: sans-serif;
+    width: 50%;
+}
+
+.main-content .image-container button {
+    color: white;
+    background-color: #bb2026;
+    font-size: 16px;
+    border: 0px;
+    padding: 10px;
+}
+
+#image-container {
+    background: url("./assets/images/bg.jpg");
+    padding: 200px;
+    background-position: center;
+}

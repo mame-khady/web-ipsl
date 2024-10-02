@@ -1,0 +1,11 @@
+main {
+    margin-top: 160px;
+}
+
+.contact {
+    margin-top: 50px; /* Ajustez la valeur pour l'espace souhaité */
+    padding: 10px; /* Ajoute un peu de padding pour un espacement intérieur */
+    background-color: #f9f9f9; /* Optionnel : ajoute une couleur de fond pour distinguer la section */
+    border: 1px solid #ddd; /* Optionnel : ajoute une bordure légère */
+    border-radius: 5px; /* Optionnel : arrondit les coins */
+}

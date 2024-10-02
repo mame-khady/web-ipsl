@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+.top-bar {
+    background: #b85c34;
+    height: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 600;
+}
+
+nav {
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+    top: 0; /* Adjusted to accommodate the top bar */
+    transition: all 0.5s ease 0s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    color: #b85c34;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+nav .logo img {
+    height: 80px; /* Adjust this value to reduce the height of the image */
+    margin-right: 20px; /* Space between the image and the text */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    float: right; /* Assure que le menu est aligné à droite */
+}
+
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: black;
+    line-height: 70px;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px 20px;
+}
+
+
+nav ul li a:hover {
+    color: #b85c34;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #b85c34, 0 0 10px #b85c34;
+}
+
+nav ul ul li a:hover {
+    box-shadow: none;
+    font-size: 15px;
+}
+
+/* Dropdown menu */
+nav ul ul {
+    position: absolute;
+    top: 70px;
+    border-top: 3px solid #b85c34;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.3s;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd; /* Bordure pour délimiter le sous-menu */
+    z-index: 700; /* Au-dessus des autres éléments */
+}
+
+nav ul ul ul {
+    border-top: none;
+}
+
+nav ul li:hover > ul {
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+nav ul ul li {
+    width: 200%;
+    display: block;
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 150px;
+}
+
+/* End of dropdown */
+
+.show,
+.icon,
+input {
+    display: none;
+}
+
+.fa-plus {
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+@media all and (max-width: 768px) {
+
+
+    nav .logo {
+        padding-left: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        margin-right: 0px;
+        float: left;
+    }
+    nav ul li,
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+    nav ul li a:hover {
+        box-shadow: none;
+    }
+
+
+    nav ul ul {
+        position: static;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul ul a {
+        padding-left: 40px;
+    }
+
+    nav ul ul ul a {
+        padding-left: 80px;
+    }
+
+    nav ul ul ul li {
+        position: static;
+    }
+
+    [id^="btn"]:checked + ul {
+        display: block;
+    }
+
+    .icon {
+        display: block;
+        color: black;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        line-height: 70px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    span.cancel:before {
+        content: "\f00d";
+    }
+}

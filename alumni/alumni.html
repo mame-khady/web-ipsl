@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>alumni</title>
+    <link rel="stylesheet" href="../components/nav.css" />
+    <link rel="stylesheet" href="../components/footer.css" />
+    <link rel="stylesheet" type="text/css" href="alumni.css" />
+    <link rel="stylesheet" type="text/css" href="testimony.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/ipsl.png" />
+
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <link rel="stylesheet" href="highlights/new_slide.css" />
+    <script src="../components/jquery-3.6.0.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/694d6af067.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="top-bar"></div>
+  <nav id="sticky-navbar">
+      <div class="logo">
+          <a href="../index.html">
+              <img src="../assets/images/ipsl.png" alt="logo" /></a>
+          <span> </span>
+      </div>
+      <label for="btn" class="icon">
+      <span class="fa fa-bars"></span>
+    </label>
+      <input type="checkbox" id="btn" placeholder="-" />
+      <ul>
+          <li><a href="../index.html">IPSL</a></li>
+          <li><a href="../aboutus/aboutus.html" target="blank">à propos de nous</a></li>
+          <li>
+              <label for="btn-2" class="show">Departements +</label>
+              <a href="#">Departements</a>
+              <input type="checkbox" id="btn-2" />
+              <ul>
+                  <li>
+                      <a href="../Departments/informatiques/informatiques.html" target="blank">Informatique</a
+            >
+          </li>
+          <li>
+            <a href="../Departments/electromecanique/electromecanique.html" target="blank"
+              >Electromecanique</a
+            >
+          </li>
+          <li>
+            <a href="../Departments/genie_civil/genie_civil.html" target="blank"
+              >Génie Civil</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <label for="btn-3" class="show">Academiques +</label>
+        <a href="#">Academiques</a>
+                      <input type="checkbox" id="btn-3" />
+                      <ul>
+                          <li>
+                              <a href="../academics/information/academicinfo.html" target="blank">Information</a
+            >
+          </li>
+          <li>
+            <a href="../academics/admissions/admissions.html" target="blank"
+              >Admissions</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li><a href="./alumni.html" target="blank">Alumni</a></li>
+                          <li><a href="../news/news.html" target="blank">Nouvelles et événements</a></li>
+                          <li>
+                              <a href="../contactus/contactus.html" target="blank">Contactez-nous</a>
+                          </li>
+                      </ul>
+  </nav>
+    <div class="head-wrap">
+        <h2 class="typing-demo">La communauté des anciens</h2>
+    </div>
+
+    <div class="alumni-container">
+        <div class="box1">
+            <h3>PROJETS ANCIENS</h3>
+            <div class="slide-container" id="slides">
+                <input type="radio" id="i1" name="images" checked />
+                <input type="radio" id="i2" name="images" />
+                <input type="radio" id="i3" name="images" />
+                <input type="radio" id="i4" name="images" />
+                <input type="radio" id="i5" name="images" />
+
+                <div class="slide_img" id="one">
+                    <img src="../assets/images/sotilma.png" alt="pic" />
+
+                    <label class="prev" for="i5"><span>&#x2039;</span></label>
+                    <label class="next" for="i2"><span>&#x203a;</span></label>
+                </div>
+
+                <div class="slide_img" id="two">
+                    <img src="../assets/images/agro.png" alt="pic" />
+
+                    <label class="prev" for="i1"><span>&#x2039;</span></label>
+                    <label class="next" for="i3"><span>&#x203a;</span></label>
+                </div>
+
+                <div class="slide_img" id="three">
+                    <img src="../assets/images/band.jpg" alt="pic" />
+
+                    <label class="prev" for="i2"><span>&#x2039;</span></label>
+                    <label class="next" for="i4"><span>&#x203a;</span></label>
+                </div>
+
+                <div class="slide_img" id="four">
+                    <img src="../assets/images/cb.jpg" alt="pic" />
+
+                    <label class="prev" for="i3"><span>&#x2039;</span></label>
+                    <label class="next" for="i5"><span>&#x203a;</span></label>
+                </div>
+
+                <div class="slide_img" id="five">
+                    <img src="../assets/images/choir.jpg" alt="pic" />
+
+                    <label class="prev" for="i4"><span>&#x2039;</span></label>
+                    <label class="next" for="i1"><span>&#x203a;</span></label>
+                </div>
+
+                <div id="nav_slide">
+                    <label for="i1" class="dots" id="dot1"></label>
+                    <label for="i2" class="dots" id="dot2"></label>
+                    <label for="i3" class="dots" id="dot3"></label>
+                    <label for="i4" class="dots" id="dot4"></label>
+                    <label for="i5" class="dots" id="dot5"></label>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="box2-1">
+                <h3>Résumé</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="box2-2">
+                <div class="form-box">
+                    <h2>ASSUREZ-VOUS DE VOUS INSCRIRE À NOTRE COMMUNAUTÉ DES ALUMNI</h2>
+                    <fieldset>
+                        <form action="POST">
+                            <div class="row">
+                                <label for="name" class="col-1">Prénom et nom</label
+            ><span
+              ><input type="text" placeholder="Your name" class="col-2" /></span
+            ><br />
+          </div>
+          <div class="row">
+            <label for="email" class="col-1">Email</label
+            ><span
+              ><input
+                type="text"
+                placeholder="Email address"
+                required
+                class="col-2" /></span
+            ><br />
+          </div>
+          <div class="row">
+            <label for="year completed" class="col-1">Année/label
+            ><span
+              ><input
+                type="text"
+                placeholder="Your completed"
+                class="col-2" /></span
+            ><br />
+          </div>
+          <div class="row">
+            <label for="phone" class="col-1">Téléphone</label
+            ><span
+              ><input
+                type="text"
+                placeholder="Phone number"
+                required
+                class="col-2" /></span
+            ><br />
+          </div>
+          <div class="row">
+            <label for="Occupation" class="col-1">Occupation</label>
+                                <span>
+              <select name="Occupation" id="#" class="col-2">
+                <option value="1">Etudiant</option>
+                <option value="1">Employé</option>
+                <option value="1">Travailleur indépendant</option>
+              </select> </span
+            ><br />
+          </div>
+          <div class="row">
+            <button><a href="./alumni.html">S'INSCRIRE</a></button>
+          </div>
+        </form>
+        <p>Nous apprécierons votre soutien</p>
+      </fieldset>
+    </div>
+
+            </div>
+        </div>
+
+        <div class="box3">
+            <div class="box box3">
+                <div class="testimonials">
+    <div class="testimonial-inner">
+      <h1>Témoignages</h1>
+      <div class="border"></div>
+      
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+            <img src="../assets/images/rama.png" alt="alumni">
+            <div class="name">John Doe</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate.</p>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="testimonial">
+            <img src="../assets/images/sall.png" alt="alumni">
+            <div class="name">John Doe</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate.</p>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="testimonial">
+            <img src="../assets/images/boye.png" alt="alumni">
+            <div class="name">John Doe</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate!</p>
+          </div>
+        </div>
+         <div class="col">
+          <div class="testimonial">
+            <img src="../assets/images/yass.png" alt="alumni">
+            <div class="name">Jane Doe</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate!</p>
+          </div>
+        </div>
+         <div class="col">
+          <div class="testimonial">
+            <img src="../assets/images/profile-pic.png" alt="alumni">
+            <div class="name">John  Doe</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate!</p>
+          </div>
+        </div>
+         <div class="col">
+          <div class="testimonial">
+            <img src="../assets/images/f3.jpg" alt="alumni">
+            <div class="name">Jane Doe</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat aspernatur temporibus assumenda sint odio minima. Voluptate alias possimus aspernatur voluptates excepturi placeat iusto cupiditate!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+
+        <h3>à propos<span>IPSL</span></h3>
+
+        <p class="footer-links">
+          <a href="../index.html">IPSL</a> |
+                        <a href="../academics/admissions/admissions.html">Admissions</a> |
+                        <a href="../aboutus.html">à propos de nous</a> |
+                        <a href="../contactus/contactus.html">Contactez-nous</a>
+                        </p>
+
+                        <p class="footer-company-name">
+                            &copy; 2024 IPSL <span>ADMISSION NO - COM/3926/21</span>
+                        </p>
+            </div>
+
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"> </i>
+                    <p>
+                        <span><a href="https://goo.gl/maps/pBLPeXH5QEj7U8Ve8" target="blank"
+                >Université Gaston Berger </a
+              >Saint-Louis</span
+            >
+          </p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p><a href="tel:+254742301435">+221 33 960 00 39</a></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:jeromejuma25@gmail.com">
+            ipsl@ugb.edu.sn</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>School Aim</span>Quality Education For EveryOne.
+                    </p>
+                    <div class="footer-icons">
+                        <a href="https://web.facebook.com/booker.academy/?_rdc=1&_rdr" target="blank"><i class="fa fa-facebook"></i
+          ></a>
+                        <a href="https://twitter.com/BMumias" target="blank"><i class="fa fa-twitter"></i
+          ></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                </footer>
+                <script>
+                    $(".icon").click(function() {
+                        $("span").toggleClass("cancel");
+                    });
+                    $(".hover").mouseleave(function() {
+                        $(this).removeClass("hover");
+                    });
+                </script>
+</body>
+
+</html>
